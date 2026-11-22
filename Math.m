@@ -1,18 +1,15 @@
 clc, clear
-num = input('Ступінь поліному: ');
-% xStart = input("Введіть початкове Х: ");
-% xEnd = input("Введіть кінецеве Х: ");
-% x = [xStart:0.001:xEnd];
+num = input('Degree of polynom: ');
 A = [];
 
 for i = num:-1:0
-    cof = sprintf("Коефіцієнт при x^%d: ", i);
+    cof = sprintf("Coefficient at x^%d: ", i);
     c = input(cof);
     A(end+1) = c;
 end
 
 disp('---')
-disp('Корені рівняння:')
+disp('Roots of polynom:')
 disp(roots(A))
 
 figure
